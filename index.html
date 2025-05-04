@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remont Kvartir</title>
+    <link rel="stylesheet" href="assetst/css/style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header_inner container">
+            <div class="logo"><img src="assetst/img/main/Logo.svg" alt=""></div>
+            <div class="header_nav">
+                <input type="checkbox" id="burger">
+                <label for="burger">
+                    <span></span>
+                </label>
+                <div class="nav_menu">
+                    <a href="#">Главная</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Портфолио</a>
+                    <a class="about_header" href="#">О нас</a>
+                </div>
+                <div class="header_btn"><a href="#">Заказать звонок</a></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner_inner container">
+            <div class="banner_title">Ремонт квартир под ключ</div>
+            <div class="banner_button">
+                <div class="banner_btn"><a href="#service_id">Наши услуги</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+
+    <!-- about -->
+    <div class="about">
+        <div class="about_inner container">
+            <div class="left">
+                <div class="about_card">
+                    <div class="card_title">15 лет</div>
+                    <div class="card_text">Опыта и 200+ <br> реализованных проектов</div>
+                </div>
+                <div class="about_card">
+                    <div class="card_title">24 месяца</div>
+                    <div class="card_text">Даем гарантию на наши услуги </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="about_card">
+                    <div class="card_title">100%</div>
+                    <div class="card_text">Гарантируем <br>соответствие ремонта с дизайн-проектом</div>
+                </div>
+                <div class="about_card">
+                    <div class="card_title">30%</div>
+                    <div class="card_text">Экономии на материалах за счет точного расчёта и скидок от поставщиков</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- about -->
+
+
+    <!-- service -->
+    <div class="service" id="service_id">
+        <div class="service_title">Мы предлагаем</div>
+        <div class="service_inner container">
+            <!-- card -->
+            <div class="service_card">
+                <div class="service_top"><img src="assetst/img/service/service_1.jpg" alt=""></div>
+                <div class="service_bot">
+                    <!-- accordeon -->
+                    <div class="accordeon">
+                        <div class="accordeon_block">
+                            <div class="accordeon_block_item" onclick="accordeon(this)">
+                                <div class="acc_block_item_top">
+                                    <p>Капитальный ремонт</p>
+                                    <p>ↆ</p>
+                                </div>
+                                <div class="acc_block_item_bot">Мы выполняем все этапы работы — от демонтажа старых
+                                    конструкций до установки новых систем и отделки.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordeon -->
+                </div>
+            </div>
+            <div class="service_card_3">
+                <div class="service_top"><img src="assetst/img/service/service_2.png" alt=""></div>
+                <div class="service_bot">
+                    <!-- accordeon -->
+                    <div class="accordeon">
+                        <div class="accordeon_block">
+                            <div class="accordeon_block_item" onclick="accordeon(this)">
+                                <div class="acc_block_item_top">
+                                    <p>Косметический ремонт</p>
+                                    <p>ↆ</p>
+                                </div>
+                                <div class="acc_block_item_bot">Идеальное решение для тех, кто хочет освежить интерьер
+                                    без значительных затрат и временных затрат</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordeon -->
+                </div>
+            </div>
+            <div class="service_card_2">
+                <div class="service_top"><img src="assetst/img/service/service_3.jpg" alt=""></div>
+                <div class="service_bot">
+                    <!-- accordeon -->
+                    <div class="accordeon">
+                        <div class="accordeon_block">
+                            <div class="accordeon_block_item" onclick="accordeon(this)">
+                                <div class="acc_block_item_top">
+                                    <p>Евроремонт</p>
+                                    <p>ↆ</p>
+                                </div>
+                                <div class="acc_block_item_bot">Мы предлагаем комплексный подход к обновлению вашего
+                                    жилья с акцентом на европейские стандарты качества и дизайна.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordeon -->
+                </div>
+            </div>
+            <!-- card -->
+        </div>
+    </div>
+    <!-- service -->
+
+
+    <!-- portfolio -->
+    <div class="portfolio">
+        <div class="portfolio_title">Наши работы</div>
+        <div class="portfolio_inner">
+            <div class="slider">
+                <div class="slider-cont">
+                    <div class="slider-cont_item active"><img src="assetst/img/slider/slider_1.jpg" alt=""></div>
+                    <div class="slider-cont_item"><img src="assetst/img/slider/slider_2.jpg" alt=""></div>
+                    <div class="slider-cont_item"><img src="assetst/img/slider/slider_3.jpg" alt=""></div>
+                </div>
+                <div class="btns">
+                    <button class="slider-btn" onclick="prevSlide()">prev</button>
+                    <button class="slider-btn" onclick="nextSlide()">next</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- portfolio -->
+
+
+    <!-- review -->
+    <div class="review_block">
+        <h2>Отзывы клиентов</h2>
+        <div class="tabs">
+            <div class="tab active" data-target="review1">Анна</div>
+            <div class="tab" data-target="review2">Иван</div>
+            <div class="tab" data-target="review3">Мария</div>
+        </div>
+
+        <div id="review1" class="review active">
+            <p>🌟🌟🌟🌟🌟</p><br>
+            <p>«Обратился в эту компанию по рекомендации друзей. Ребята сделали капитальный ремонт в однушке "под ключ".
+                Все сроки соблюдены, материалы закуплены без моего участия, я только утверждал сметы. Очень доволен
+                результатом — качественно, современно и без нервов. Спасибо!»</p>
+        </div>
+
+        <div id="review2" class="review">
+            <p>🌟🌟🌟🌟</p><br>
+            <p>«Делали косметический ремонт в старой квартире для сдачи в аренду. Работа выполнена аккуратно, стены и
+                потолки идеально ровные, сантехника установлена без нареканий. Немного затянули по срокам, но результат
+                того стоит!»</p>
+        </div>
+        <div id="review3" class="review">
+            <p>🌟🌟🌟🌟🌟</p><br>
+            <p>«Заказывали ремонт новостройки под семейное проживание. Дизайнер предложил отличные решения, особенно по
+                освещению и зонированию. Бригада вежливая, после себя убрали весь строительный мусор. Уже живем и
+                радуемся! Рекомендуем всем!»</p>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const reviews = document.querySelectorAll('.review');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                reviews.forEach(r => r.classList.remove('active'));
+                tab.classList.add('active');
+                const targetId = tab.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+    <!-- review -->
+
+    <!-- contact -->
+    <div class="contact">
+        <div class="contact_inner container">
+            <div class="contact_left">
+                <h3>Ваш идеальный интерьер начинается здесь</h3>
+                <p>Доверьте нам создание дизайна вашей мечты</p>
+            </div>
+            <div class="contact_right">
+                <div class="contact_title">Связатсья с нами</div>
+                <div class="contact_content">
+                    <div class="name">
+                        <p>Имя:</p>
+                        <input type="text" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="phone">
+                        <p>Телефон:</p>
+                        <input type="text" placeholder="Введите ваш телефон">
+                    </div>
+                </div>
+                <div class="contact_us_btn"><a href="#">Связаться с нами</a></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer>
+        © Лановский Дмитрий 325 ВЕБ
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
